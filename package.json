@@ -7,10 +7,12 @@
     "babel-cli": "^6.24.1",
     "babel-preset-env": "^1.5.2",
     "babel-preset-react": "^6.24.1",
-    "live-server": "^1.2.1"
+    "live-server": "^1.2.1",
+    "webpack": "^3.1.0"
   },
   "devDependencies": {},
   "scripts": {
+    "build": "webpack --watch",
     "serve": "live-server public/",
     "counter": "babel src/playground/counter-example.js --out-file=public/scripts/app.js --presets=env,react --watch",
     "indecision": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch",
