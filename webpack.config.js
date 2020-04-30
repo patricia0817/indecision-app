@@ -1,4 +1,5 @@
 const path = require('path');
+
 module.exports = {
   entry: './src/app.js',
   output: {
@@ -15,4 +16,7 @@ module.exports = {
     ],
   },
   devtool: 'cheap-module-eval-source-map',
+  devServer: {
+    contentBase: path.join(__dirname, 'public'),
+  },
 };

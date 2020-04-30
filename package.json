@@ -13,14 +13,14 @@
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "validator": "^8.0.0",
-    "webpack": "^3.1.0"
+    "webpack": "^3.1.0",
+    "webpack-dev-server": "^2.5.1"
   },
   "devDependencies": {},
   "scripts": {
-    "build": "webpack --watch",
+    "build": "webpack",
     "serve": "live-server public/",
-    "counter": "babel src/playground/counter-example.js --out-file=public/scripts/app.js --presets=env,react --watch",
-    "indecision": "babel src/app.js --out-file=public/scripts/app.js --presets=env,react --watch",
+    "dev-server": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
